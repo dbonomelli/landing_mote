@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Header(): JSX.Element {
   return (
-    <header className="flex w-full align-middle justify-between p-4 border-b border-solid border-black/[.08] dark:border-white/[.145]">
-      <div className="flex flex-row items-center w-full">
+    <header className="flex flex-col md:flex-row w-full md:align-middle md:justify-between p-4 border-b border-solid border-black/[.08] dark:border-white/[.145]">
+      <div className="flex flex-col md:flex-row items-center md:w-full">
         <Image
           aria-hidden
           src="/logo-transparent.svg"
@@ -16,10 +16,10 @@ export default function Header(): JSX.Element {
         />
         <h1 className="text-2xl font-bold">Mote donde la tía Nena</h1>
       </div>
-      <nav className="flex flex-row items-center">
+      <nav className="flex flex-row justify-around items-center">
         <ul className="flex space-x-4 float-right">
           <li>
-            <a href="/home" className="text-white hover:text-gray-500">
+            <a href="/" className="text-white hover:text-gray-500">
               Inicio
             </a>
           </li>
